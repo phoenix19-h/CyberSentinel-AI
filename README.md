@@ -1,64 +1,70 @@
-# 🛡️ CyberSentinel
+# 🛡️ CyberSentinel AI
 
-> A full-stack web security scanner that automates website reconnaissance, identifies technologies, scans network ports, maps known vulnerabilities (CVEs), and visualizes security risks through an intuitive dashboard.
+> **An AI-Powered Web Security Assessment & Threat Intelligence Platform built with React, Node.js, Express, and Ollama.**
 
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![React](https://img.shields.io/badge/Frontend-React-61DAFB)
-![Node.js](https://img.shields.io/badge/Backend-Node.js-339933)
-![Express](https://img.shields.io/badge/API-Express-000000)
-![Status](https://img.shields.io/badge/Status-Active-success)
+CyberSentinel AI is a full-stack cybersecurity platform that combines traditional security scanning with local AI-powered analysis using **Ollama**. It helps users perform comprehensive web security assessments by integrating reconnaissance, vulnerability detection, reputation analysis, and AI-assisted threat interpretation into a single, intuitive dashboard.
+
+Unlike conventional scanners, CyberSentinel AI leverages a locally hosted Large Language Model (LLM) through Ollama to explain vulnerabilities, recommend remediation strategies, and provide contextual security insights while keeping all AI analysis local.
 
 ---
 
-# 📖 Overview
+# 🚀 Features
 
-CyberSentinel is a full-stack cybersecurity application designed to help security enthusiasts, students, and developers perform basic reconnaissance and vulnerability assessment of web applications.
-
-The platform combines multiple security utilities into a single dashboard, allowing users to gather information about a target website and identify potential security risks efficiently.
-
-This project was developed to strengthen practical skills in web security, network reconnaissance, vulnerability assessment, API development, and modern full-stack application development.
-
----
-
-# ✨ Features
-
+- 🤖 AI Security Analyst (Powered by Ollama)
+- 🌐 URL Security Scanner
 - 🔎 Website Technology Detection
-- 🌐 Network Port Scanning
-- 🛡️ CVE Identification & Mapping
-- 📊 Interactive Threat Graph
-- 📈 Security Dashboard
-- ⚡ Responsive Modern User Interface
-- 🔄 Real-Time Scan Results
+- 🔌 Network Port Scanner
+- 🛡️ CVE Detection & Analysis
+- 🎣 Phishing Detection
+- 🌍 DNS Lookup
+- 🌐 IP Intelligence Scanner
+- ⚠️ URL Reputation & Blacklist Checking
+- 📊 Threat History Dashboard
+- 📈 Interactive Threat Visualization
+- 💡 AI-Powered Security Recommendations
 
 ---
 
-# 🛠 Tech Stack
+# 🛠️ Tech Stack
 
-## Frontend
+### Frontend
 
 - React
 - Vite
 - Tailwind CSS
 - Axios
 
-## Backend
+### Backend
 
 - Node.js
 - Express.js
 
-## Cybersecurity
+### AI
+
+- Ollama
+- Local Large Language Model (LLM)
+
+### Cybersecurity
 
 - Nmap
 - CVE APIs
+- URL Reputation APIs
+- DNS Resolution
 - HTTP Requests
 - Network Reconnaissance
+
+### Development Tools
+
+- Git
+- GitHub
+- VS Code
 
 ---
 
 # 📂 Project Structure
 
 ```
-CyberSentinel/
+CyberSentinel-AI/
 │
 ├── frontend/
 │   ├── src/
@@ -73,8 +79,43 @@ CyberSentinel/
 │   └── server.js
 │
 ├── screenshots/
+│   ├── dashboard.png
+│   ├── portscanner.png
+│   ├── web-security.png
+│   ├── cve.png
+│   ├── phishing.png
+│   ├── dns.png
+│   ├── ip-scanner.png
+│   └── history.png
+│
 ├── README.md
 └── .gitignore
+```
+
+---
+
+# 🏗️ Architecture
+
+```
+                    Target URL
+                         │
+                         ▼
+               URL Security Scanner
+                         │
+        ┌────────────────┼────────────────┐
+        ▼                ▼                ▼
+ Technology        Port Scanner      DNS/IP Lookup
+ Detection
+        │                │                │
+        └────────────────┼────────────────┘
+                         ▼
+        CVE & Reputation Analysis Engine
+                         ▼
+          Ollama AI Security Analyst
+                         ▼
+    Threat Assessment & Remediation Advice
+                         ▼
+         Interactive Security Dashboard
 ```
 
 ---
@@ -84,33 +125,29 @@ CyberSentinel/
 ## Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/CyberSentinel.git
+git clone https://github.com/phoenix19-h/CyberSentinel-AI.git
 ```
 
-## Install Backend Dependencies
+## Backend Setup
 
 ```bash
 cd backend
 npm install
-```
-
-## Start Backend
-
-```bash
 npm start
 ```
 
-## Install Frontend Dependencies
+## Frontend Setup
 
 ```bash
-cd ../frontend
+cd frontend
 npm install
+npm run dev
 ```
 
-## Start Frontend
+The frontend will typically run at:
 
-```bash
-npm run dev
+```
+http://localhost:5173
 ```
 
 ---
@@ -119,70 +156,94 @@ npm run dev
 
 ## Dashboard
 
-_Add screenshot here_
+![Dashboard](screenshots/dashboard.png)
 
 ---
 
 ## Port Scanner
 
-_Add screenshot here_
+![Port Scanner](screenshots/portscanner.png)
 
 ---
 
-## Technology Detector
+## Website Technology Detection
 
-_Add screenshot here_
+![Technology Detection](screenshots/web-security.png)
 
 ---
 
 ## CVE Detection
 
-_Add screenshot here_
+![CVE Detection](screenshots/cve.png)
 
 ---
 
-## Threat Graph
+## Phishing Detection
 
-_Add screenshot here_
+![Phishing Detection](screenshots/phishing.png)
+
+---
+
+## DNS Lookup
+
+![DNS Lookup](screenshots/dns.png)
+
+---
+
+## IP Intelligence
+
+![IP Intelligence](screenshots/ip-scanner.png)
+
+---
+
+## Threat History
+
+![Threat History](screenshots/history.png)
+
+---
+
+# 🤖 AI Security Analysis
+
+CyberSentinel AI integrates **Ollama** to provide intelligent security analysis beyond traditional vulnerability scanning.
+
+The AI assistant can:
+
+- Explain detected vulnerabilities in simple language.
+- Analyze scan results and identify potential security risks.
+- Recommend remediation steps based on discovered issues.
+- Provide contextual cybersecurity insights using a locally hosted LLM.
+- Perform all AI analysis locally without relying on external cloud AI services.
 
 ---
 
 # 🎯 Learning Outcomes
 
-Building CyberSentinel strengthened my understanding of:
+This project strengthened my practical understanding of:
 
+- Web Application Security
 - Vulnerability Assessment
 - Network Reconnaissance
-- Web Application Security
+- AI-Assisted Security Analysis
+- CVE Identification
+- Phishing Detection
 - REST API Development
+- Full-Stack Development
+- Secure Software Design
 - React & Node.js Integration
-- Security Automation
-- CVE Analysis
-- Secure Software Development
 
 ---
 
 # 🔮 Future Improvements
 
-- WHOIS Lookup
-- Subdomain Enumeration
-- SSL/TLS Analysis
+- SSL/TLS Certificate Analysis
 - HTTP Security Header Analysis
-- Export Reports (PDF)
-- User Authentication
-- Scheduled Scanning
-- Risk Scoring System
-
----
-
-# 🤝 Contributing
-
-Contributions, suggestions, and improvements are welcome.
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Open a Pull Request
+- Export Reports (PDF/CSV)
+- Authentication & User Accounts
+- Scheduled Automated Scans
+- Advanced Risk Scoring
+- Docker Deployment
+- CI/CD Integration
+- Scan Result Comparison
 
 ---
 
@@ -192,11 +253,13 @@ This project is licensed under the **MIT License**.
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Harnoor Kaur**
 
 - GitHub: https://github.com/phoenix19-h
 - LinkedIn: https://linkedin.com/in/harnoor-kaur-01716837b
 
-If you found this project useful, consider giving it a ⭐ on GitHub!
+---
+
+⭐ **If you found this project useful, consider giving it a star on GitHub!**
