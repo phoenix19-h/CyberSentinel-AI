@@ -115,37 +115,7 @@ npm run dev
 
 ---
 
-# 📸 Screenshots
 
-## Dashboard
-
-_Add screenshot here_
-
----
-
-## Port Scanner
-
-_Add screenshot here_
-
----
-
-## Technology Detector
-
-_Add screenshot here_
-
----
-
-## CVE Detection
-
-_Add screenshot here_
-
----
-
-## Threat Graph
-
-_Add screenshot here_
-
----
 
 # 🎯 Learning Outcomes
 
